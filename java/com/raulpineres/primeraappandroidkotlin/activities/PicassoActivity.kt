@@ -14,6 +14,7 @@ class PicassoActivity : ToolbarActivity() {
         setContentView(R.layout.activity_picasso)
 
         toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         buttonLoader.setOnClickListener { loadImages() }
 

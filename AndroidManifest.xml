@@ -18,9 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ClickEventsActivity" />
+        <activity android:name=".activities.ClickEventsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".activities.ExtensionFunctionsActivity" />
-        <activity android:name=".activities.IntentsActivity" />
+        <activity android:name=".activities.IntentsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".activities.KotlinAndroidExtensionsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

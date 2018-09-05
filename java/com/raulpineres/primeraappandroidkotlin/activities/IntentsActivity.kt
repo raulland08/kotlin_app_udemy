@@ -6,18 +6,17 @@ import android.os.Bundle
 import android.support.v7.widget.Toolbar
 import com.raulpineres.primeraappandroidkotlin.R
 import com.raulpineres.primeraappandroidkotlin.models.Student
+import com.raulpineres.primeraappandroidkotlin.others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_intents.*
 
-class IntentsActivity : AppCompatActivity() {
-
-    private lateinit var toolbar : Toolbar
+class IntentsActivity : ToolbarActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intents)
 
-        toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        toolbarToLoad(toolbar as Toolbar)
+        enableHomeDisplay(true)
 
         button_intent_extras.setOnClickListener { goIntentExtras() }
         button_intent_flags.setOnClickListener { goIntentFlags() }
