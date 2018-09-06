@@ -18,6 +18,9 @@ class IntentsActivity : ToolbarActivity() {
         toolbarToLoad(toolbar as Toolbar)
         enableHomeDisplay(true)
 
+        val actionbar = supportActionBar
+        actionbar!!.title = getString(R.string.button_to_intents)
+
         button_intent_extras.setOnClickListener { goIntentExtras() }
         button_intent_flags.setOnClickListener { goIntentFlags() }
         button_intent_object.setOnClickListener { goIntentObject() }

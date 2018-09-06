@@ -17,6 +17,9 @@ class KotlinAndroidExtensionsActivity : ToolbarActivity() {
         toolbarToLoad(toolbar as Toolbar)
         enableHomeDisplay(true)
 
+        val actionbar = supportActionBar
+        actionbar!!.title = getString(R.string.button_to_candroid_extensions)
+
         val btn = findViewById<Button>(R.id.buttonById)
         btn.setOnClickListener{ Toast.makeText(this, "Click FindViewById", Toast.LENGTH_SHORT).show() }
 

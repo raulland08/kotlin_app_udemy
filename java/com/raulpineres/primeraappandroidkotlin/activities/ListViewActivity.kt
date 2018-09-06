@@ -20,6 +20,9 @@ class ListViewActivity : ToolbarActivity() {
         toolbarToLoad(toolbar as Toolbar)
         enableHomeDisplay(true)
 
+        val actionbar = supportActionBar
+        actionbar!!.title = getString(R.string.button_to_list_view)
+
         personList = getPersonas()
         adapter = PersonAdapter(this, R.layout.recycler_view, personList)
         recyclerView.adapter = adapter

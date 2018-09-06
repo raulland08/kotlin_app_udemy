@@ -1,6 +1,5 @@
 package com.raulpineres.primeraappandroidkotlin.activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.widget.Toolbar
@@ -19,6 +18,9 @@ class ClickEventsActivity : ToolbarActivity(), View.OnLongClickListener {
 
         toolbarToLoad(toolbar as Toolbar)
         enableHomeDisplay(true)
+
+        val actionbar = supportActionBar
+        actionbar!!.title = getString(R.string.button_to_click)
 
         clickInLine()
 

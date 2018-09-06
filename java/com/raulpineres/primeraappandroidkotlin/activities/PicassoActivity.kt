@@ -16,6 +16,9 @@ class PicassoActivity : ToolbarActivity() {
         toolbarToLoad(toolbar as Toolbar)
         enableHomeDisplay(true)
 
+        val actionbar = supportActionBar
+        actionbar!!.title = getString(R.string.button_to_picasso)
+
         buttonLoader.setOnClickListener { loadImages() }
 
         Picasso.get().load("http://i.imgur.com/DvpvklR.png").fetch()

@@ -13,11 +13,16 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : ToolbarActivity() {
 
+    private val TAG = "Home"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         toolbarToLoad(toolbar as Toolbar)
+
+        val actionbar = supportActionBar
+        actionbar!!.title = TAG
 
         val btnLifeCycle = findViewById<Button>(R.id.button_to_cycle)
         val btnClickEvents = findViewById<Button>(R.id.button_to_click)
