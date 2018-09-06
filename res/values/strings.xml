@@ -22,4 +22,5 @@
     <string name="button_intent_object">Intent with Objetc</string>
     <string name="go_back">go back</string>
     <string name="take_picture">Take a picture</string>
+    <string name="text_activity_life_cycle">Activity life cycle</string>
 </resources>

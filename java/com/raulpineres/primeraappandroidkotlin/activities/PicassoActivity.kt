@@ -29,6 +29,7 @@ class PicassoActivity : ToolbarActivity() {
         Picasso.get()
                 .load("http://i.imgur.com/DvpvklR.png")
                 .fit()
+                .centerInside()
                 //.transform(CircleTransform())
                 .into(imageViewTop)
         Picasso.get()
