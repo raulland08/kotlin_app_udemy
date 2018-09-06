@@ -29,7 +29,7 @@ class PicassoActivity : ToolbarActivity() {
         Picasso.get()
                 .load("http://i.imgur.com/DvpvklR.png")
                 .fit()
-                .transform(CircleTransform())
+                //.transform(CircleTransform())
                 .into(imageViewTop)
         Picasso.get()
                 .load("https://desarrollador-android.com/wp-content/uploads/2015/02/materialdesign_introduction.png")
