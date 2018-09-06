@@ -21,4 +21,5 @@
     <string name="button_intent_flags">Intent with Flags</string>
     <string name="button_intent_object">Intent with Objetc</string>
     <string name="go_back">go back</string>
+    <string name="take_picture">Take a picture</string>
 </resources>
