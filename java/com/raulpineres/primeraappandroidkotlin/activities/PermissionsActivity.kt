@@ -8,6 +8,7 @@ import android.graphics.Bitmap
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.widget.Toast
@@ -23,7 +24,17 @@ class PermissionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_permissions)
 
-        button_picture.setOnClickListener { getPictureAskingPermissions() }
+        button_picture.setOnClickListener { getPictureFromCamera() }
+    }
+
+    private fun getPictureFromCamera() {
+        val pictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+
+        if (pictureIntent.resolveActivity(packageManager) != null) {
+            startActivityForResult(pictureIntent, REQUEST_RESULT)
+        } else {
+            Snackbar.make(button_picture, "No hay aplicación de cámara disponible en este momento", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     private fun getPictureAskingPermissions(){

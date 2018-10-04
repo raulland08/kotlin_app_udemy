@@ -27,7 +27,6 @@ class ClickEventsActivity : ToolbarActivity(), View.OnLongClickListener {
         val btn1 = findViewById<Button>(R.id.buttonClickMulti1)
         val btn2 = findViewById<Button>(R.id.buttonClickMulti2)
         val btn3 = findViewById<Button>(R.id.buttonClickMulti3)
-
         btn1.setOnLongClickListener(this)
         btn2.setOnLongClickListener(this)
         btn3.setOnLongClickListener(this)
