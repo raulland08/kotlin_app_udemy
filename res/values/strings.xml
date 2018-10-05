@@ -23,4 +23,7 @@
     <string name="go_back">go back</string>
     <string name="take_picture">Take a picture</string>
     <string name="text_activity_life_cycle">Activity life cycle</string>
+    <string name="type_name_here">Type name here</string>
+    <string name="type_age_here">Type age here</string>
+    <string name="save_preferences">Save preferences</string>
 </resources>
